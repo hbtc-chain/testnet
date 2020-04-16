@@ -10,7 +10,7 @@ services:
     ports:
     - "26656-26659:26656-26659"
     volumes:
-    - ./hbtcchain:/go/initial-node
+    - ~/hbtcchain/node:/go/initial-node
     - ./data-vol/hbtcd:/root/.hbtcd
     network_mode: "bridge"
 
