@@ -1,0 +1,16 @@
+version: '2.4'
+services:
+  hbtcchain:
+    image: hbtcchain/testnet:v0.1.3
+    container_name: hbtcchain
+    entrypoint: [ "sh", "run.sh", "--home", "/root/.hbtcd", "--minimum-gas-prices", "1000000000000.0hbc"]
+    restart: unless-stopped
+    ulimits:
+        nofile: 51200
+    ports:
+    - "26656-26659:26656-26659"
+    volumes:
+    - ./hbtcchain:/go/initial-node
+    - ./data-vol/hbtcd:/root/.hbtcd
+    network_mode: "bridge"
+
