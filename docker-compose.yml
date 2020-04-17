@@ -3,7 +3,7 @@ services:
   hbtcchain:
     image: hbtcchain/testnet:v0.1.3
     container_name: hbtcchain
-    entrypoint: [ "sh", "run.sh", "--home", "/root/.hbtcd", "--minimum-gas-prices", "1000000000000.0hbc"]
+    entrypoint: [ "sh", "run.sh", "--home", "/root/.hbtcd"]
     restart: unless-stopped
     ulimits:
         nofile: 51200
