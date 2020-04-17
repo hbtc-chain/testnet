@@ -40,5 +40,3 @@ HBTC Chain测试网已经上线并且经常进行更新。当前测试网支持�
 
 有任何问题和建议，请新开Issue或者通过以下方式联系：
 - 邮件：[bhchain-dev@bhex.com](bhchain-dev@bhex.com)
-- 开发者讨论：https://gitter.im/bluehelix-network/dev
-- 社区讨论：https://gitter.im/bluehelix-network/community

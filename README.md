@@ -39,5 +39,3 @@ Please email to bhchain-dev@bhex.com with subject starting "Get testnet HBC: [Yo
 
 For any issues and suggestions, please post to issues or find us at
 - Email: bhchain-dev@bhex.com
-- Developer channel: https://gitter.im/bluehelix-network/dev
-- Community channel: https://gitter.im/bluehelix-network/community
