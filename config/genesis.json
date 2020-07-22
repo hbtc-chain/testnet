@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2020-06-21T09:57:35.335621Z",
+  "genesis_time": "2020-07-22T13:48:14.398156232Z",
   "chain_id": "hbtc-testnet",
   "consensus_params": {
     "block": {
@@ -18,114 +18,16 @@
   },
   "app_hash": "",
   "app_state": {
-    "accounts": [
-      {
-        "cu_type": "0",
-        "public_key": null,
-        "coins_hold": [],
-        "assets": null,
-        "asset_coins": [],
-        "asset_coins_hold": [],
-        "disable_send_tx": null,
-        "asset_pubkey": null,
-        "gas_used": [],
-        "gas_received": [],
-        "address": "HBCcqd2fE98XqdJMDuFvVzFJd5Tjoegi5Cfo",
-        "coins": [
-          {
-            "denom": "hbc",
-            "amount": "500000000000000000000000000"
-          }
-        ],
-        "sequence_number": "0",
-        "module_name": "",
-        "module_permissions": null
-      },
-      {
-        "cu_type": "0",
-        "public_key": null,
-        "coins_hold": [],
-        "assets": null,
-        "asset_coins": [],
-        "asset_coins_hold": [],
-        "disable_send_tx": null,
-        "asset_pubkey": null,
-        "gas_used": [],
-        "gas_received": [],
-        "address": "HBCeZXknux28DScaavB4eoC5CaVQcfnPwpHg",
-        "coins": [
-          {
-            "denom": "hbc",
-            "amount": "500000000000000000000000000"
-          }
-        ],
-        "sequence_number": "0",
-        "module_name": "",
-        "module_permissions": null
-      },
-      {
-        "cu_type": "0",
-        "public_key": null,
-        "coins_hold": [],
-        "assets": null,
-        "asset_coins": [],
-        "asset_coins_hold": [],
-        "disable_send_tx": null,
-        "asset_pubkey": null,
-        "gas_used": [],
-        "gas_received": [],
-        "address": "HBCR86y741nFRA1waZvDH5eLDPWxswXEEsx5",
-        "coins": [
-          {
-            "denom": "hbc",
-            "amount": "500000000000000000000000000"
-          }
-        ],
-        "sequence_number": "0",
-        "module_name": "",
-        "module_permissions": null
-      },
-      {
-        "cu_type": "0",
-        "public_key": null,
-        "coins_hold": [],
-        "assets": null,
-        "asset_coins": [],
-        "asset_coins_hold": [],
-        "disable_send_tx": null,
-        "asset_pubkey": null,
-        "gas_used": [],
-        "gas_received": [],
-        "address": "HBCXaiZNDZ6gsz165Rzbo9qRVpANFoKySYLh",
-        "coins": [
-          {
-            "denom": "hbc",
-            "amount": "500000000000000000000000000"
-          }
-        ],
-        "sequence_number": "0",
-        "module_name": "",
-        "module_permissions": null
-      }
-    ],
-    "order": {},
-    "staking": {
+    "cu": {
+      "custodianunits": [],
       "params": {
-        "unbonding_time": "1814400000000000",
-        "max_validators": 4,
-        "max_entries": 7,
-        "bond_denom": "hbc",
-        "election_period": "50"
-      },
-      "last_total_power": "0",
-      "last_validator_powers": null,
-      "validators": null,
-      "delegations": null,
-      "unbonding_delegations": null,
-      "redelegations": null,
-      "exported": false
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      }
     },
-    "params": null,
     "distribution": {
       "fee_pool": {
         "community_pool": []
@@ -143,220 +45,42 @@
       "delegator_starting_infos": [],
       "validator_slash_events": []
     },
-    "mint": {
-      "minter": {},
-      "params": {
-        "mint_denom": "hbc",
-        "blocks_per_year": "10519200",
-        "inflation": "0.030000000000000000",
-        "initial_price": "0.100000000000000000",
-        "current_price": "0.100000000000000000",
-        "node_cost_per_month": "2600.000000000000000000"
+    "receipt": {},
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_init_deposit": [
+          {
+            "denom": "hbc",
+            "amount": "1000000000000000000000"
+          }
+        ],
+        "min_deposit": [
+          {
+            "denom": "hbc",
+            "amount": "100000000000000000000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
       }
     },
-    "mapping": {},
     "hrc20": {
       "params": {
         "issue_token_fee": "10000000000000000000000"
       }
     },
-    "cu": {
-      "custodianunits": [],
-      "params": {
-        "max_memo_characters": "256",
-        "tx_sig_limit": "7",
-        "tx_size_cost_per_byte": "10",
-        "sig_verify_cost_ed25519": "590",
-        "sig_verify_cost_secp256k1": "1000"
-      }
-    },
-    "transfer": {
-      "send_enabled": true
-    },
-    "genutil": {
-      "gentxs": [
-        {
-          "type": "hbtcchain/StdTx",
-          "value": {
-            "msg": [
-              {
-                "type": "hbtcchain/MsgCreateValidator",
-                "value": {
-                  "description": {
-                    "moniker": "node0",
-                    "identity": "",
-                    "website": "",
-                    "details": ""
-                  },
-                  "commission": {
-                    "rate": "0.000000000000000000",
-                    "max_rate": "0.000000000000000000",
-                    "max_change_rate": "0.000000000000000000"
-                  },
-                  "min_self_delegation": "5000000000000000000000000",
-                  "delegator_address": "HBCcqd2fE98XqdJMDuFvVzFJd5Tjoegi5Cfo",
-                  "validator_address": "hbcvaloper1k6jdnnvtscc6lrva6jf5s4e3xyn6kqyn42rqya",
-                  "pubkey": "hbcvalconspub1zcjduepq03t9qykgyg9hfmhtvfrxfxamz9dg36307n52ndvcs9yfu6tkqvmsscghzu",
-                  "value": {
-                    "denom": "hbc",
-                    "amount": "100000000000000000000000000"
-                  }
-                }
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas": "0"
-            },
-            "signatures": [
-              {
-                "pub_key": {
-                  "type": "tendermint/PubKeySecp256k1",
-                  "value": "Amus6N1AlkHJ2wCoK9iFRi+CHbnlZmtUstNA1YaFPIC1"
-                },
-                "signature": "SHiCeZVPO8/bSeHgEwiLWsUGbFe1xGEj0JC0pJ3S6cwH2yv4KQ1NCeGDll6I6v7RTVZNdOGJuCPET5LokCnyQA=="
-              }
-            ],
-            "memo": "25889aaaedd47d77240f1e97cbdb4b391504ecb7@192.168.0.2:26656"
-          }
-        },
-        {
-          "type": "hbtcchain/StdTx",
-          "value": {
-            "msg": [
-              {
-                "type": "hbtcchain/MsgCreateValidator",
-                "value": {
-                  "description": {
-                    "moniker": "node1",
-                    "identity": "",
-                    "website": "",
-                    "details": ""
-                  },
-                  "commission": {
-                    "rate": "0.000000000000000000",
-                    "max_rate": "0.000000000000000000",
-                    "max_change_rate": "0.000000000000000000"
-                  },
-                  "min_self_delegation": "5000000000000000000000000",
-                  "delegator_address": "HBCeZXknux28DScaavB4eoC5CaVQcfnPwpHg",
-                  "validator_address": "hbcvaloper1ex9qk79mmlt0cwdcsfa6vgdu206x0sml2dthge",
-                  "pubkey": "hbcvalconspub1zcjduepqtjp0av392689qkwq0cszfl8qhwk3klrtt86cvhakm67hvn2f53mqutrt8v",
-                  "value": {
-                    "denom": "hbc",
-                    "amount": "100000000000000000000000000"
-                  }
-                }
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas": "0"
-            },
-            "signatures": [
-              {
-                "pub_key": {
-                  "type": "tendermint/PubKeySecp256k1",
-                  "value": "AmJ4WWNihhoGBwtvJHX+r766uac+/Ix4kHns7UAfvzcc"
-                },
-                "signature": "iot0sYdRt4xoJXasvCorIdJ3NhNOPHRQ8Vvo92M/wD1GFIRcZ6wWXusqKYEcn5KstAuoInSwsXGnj2sm3qifKw=="
-              }
-            ],
-            "memo": "daaeeafaabeb9b7362523d8cc8deab15f1858de3@192.168.0.3:26656"
-          }
-        },
-        {
-          "type": "hbtcchain/StdTx",
-          "value": {
-            "msg": [
-              {
-                "type": "hbtcchain/MsgCreateValidator",
-                "value": {
-                  "description": {
-                    "moniker": "node2",
-                    "identity": "",
-                    "website": "",
-                    "details": ""
-                  },
-                  "commission": {
-                    "rate": "0.000000000000000000",
-                    "max_rate": "0.000000000000000000",
-                    "max_change_rate": "0.000000000000000000"
-                  },
-                  "min_self_delegation": "5000000000000000000000000",
-                  "delegator_address": "HBCR86y741nFRA1waZvDH5eLDPWxswXEEsx5",
-                  "validator_address": "hbcvaloper1xcs4r866qez0a6nemdnd0l26ng7psys2s2kvjs",
-                  "pubkey": "hbcvalconspub1zcjduepqvtkkq8z24x299ym6zx9azpsstw83zpg89v682q7syvxt98edlnyqx0574x",
-                  "value": {
-                    "denom": "hbc",
-                    "amount": "100000000000000000000000000"
-                  }
-                }
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas": "0"
-            },
-            "signatures": [
-              {
-                "pub_key": {
-                  "type": "tendermint/PubKeySecp256k1",
-                  "value": "AoPI9+Nm4ldpmP+KBqidG86tvSHJNkYt/snnP4hpshIm"
-                },
-                "signature": "iOEhXub/PGv5EPXv/qCnvGvnEsoTnVZX2ZxjiA2tm242TN25jesBZ7VF4/2EFHcbr4er72Ae+0GZXrT0EG2yqA=="
-              }
-            ],
-            "memo": "785737df3ebad7347cfc1d2f02e7c0e981346c5d@192.168.0.4:26656"
-          }
-        },
-        {
-          "type": "hbtcchain/StdTx",
-          "value": {
-            "msg": [
-              {
-                "type": "hbtcchain/MsgCreateValidator",
-                "value": {
-                  "description": {
-                    "moniker": "node3",
-                    "identity": "",
-                    "website": "",
-                    "details": ""
-                  },
-                  "commission": {
-                    "rate": "0.000000000000000000",
-                    "max_rate": "0.000000000000000000",
-                    "max_change_rate": "0.000000000000000000"
-                  },
-                  "min_self_delegation": "5000000000000000000000000",
-                  "delegator_address": "HBCXaiZNDZ6gsz165Rzbo9qRVpANFoKySYLh",
-                  "validator_address": "hbcvaloper10nafjgj2xuem2y3ykajkgtftfree9rlsdfyqnp",
-                  "pubkey": "hbcvalconspub1zcjduepqm8r0f2hy2avvufra6nfv0r9xx2vl8rx3wyalc5zhsm4c8wd7wdmqyzfte2",
-                  "value": {
-                    "denom": "hbc",
-                    "amount": "100000000000000000000000000"
-                  }
-                }
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas": "0"
-            },
-            "signatures": [
-              {
-                "pub_key": {
-                  "type": "tendermint/PubKeySecp256k1",
-                  "value": "A2pIf0xvfB7NicJbFgFVzpnU5lJ52M55L2735suPgxza"
-                },
-                "signature": "3wISL3Ci+/W0bjZCkQk6W2dqVwcrZR+drB9YW+Hmbih/LVKcOSLoG6imqx4YAzD/Qv7qbaG8ji1yJTj1Iq7ORQ=="
-              }
-            ],
-            "memo": "b71ce8d2193a5a991ce00d5f6787792bf7c91488@192.168.0.5:26656"
-          }
-        }
-      ]
-    },
+    "keygen": {},
     "slashing": {
       "params": {
         "max_evidence_age": "120000000000",
@@ -369,11 +93,199 @@
       "signing_infos": {},
       "missed_blocks": {}
     },
-    "receipt": {},
+    "crisis": {
+      "constant_fee": {
+        "denom": "hbc",
+        "amount": "1000"
+      }
+    },
+    "order": {},
+    "upgrade": {},
+    "evidence": {
+      "BehaviourParams": {
+        "Vote": {
+          "BehaviourWindow": "100",
+          "MaxMisbehaviourCount": "10",
+          "BehaviourSlashFraction": "0.100000000000000000"
+        },
+        "dsign": {
+          "BehaviourWindow": "100",
+          "MaxMisbehaviourCount": "10",
+          "BehaviourSlashFraction": "0.100000000000000000"
+        }
+      }
+    },
+    "params": null,
+    "mapping": {},
+    "mint": {
+      "minter": {},
+      "params": {
+        "mint_denom": "hbc",
+        "blocks_per_year": "10519200",
+        "inflation": "0.030000000000000000",
+        "initial_price": "0.100000000000000000",
+        "current_price": "0.100000000000000000",
+        "node_cost_per_month": "2600.000000000000000000"
+      }
+    },
+    "accounts": [
+      {
+        "cu_type": "0",
+        "public_key": null,
+        "coins_hold": [],
+        "assets": null,
+        "asset_coins": [],
+        "asset_coins_hold": [],
+        "disable_send_tx": null,
+        "asset_pubkey": null,
+        "gas_used": [],
+        "gas_received": [],
+        "address": "HBCdNx9SFTcUqWwXerHteqsFQN8cUxnjNJBx",
+        "coins": [
+          {
+            "denom": "hbc",
+            "amount": "5000000000000000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "cu_type": "0",
+        "public_key": null,
+        "coins_hold": [],
+        "assets": null,
+        "asset_coins": [],
+        "asset_coins_hold": [],
+        "disable_send_tx": null,
+        "asset_pubkey": null,
+        "gas_used": [],
+        "gas_received": [],
+        "address": "HBCLUCJkp6KU6WA35GmQ9fya2B3hRZTn4pKd",
+        "coins": [
+          {
+            "denom": "hbc",
+            "amount": "5000000000000000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "cu_type": "0",
+        "public_key": null,
+        "coins_hold": [],
+        "assets": null,
+        "asset_coins": [],
+        "asset_coins_hold": [],
+        "disable_send_tx": null,
+        "asset_pubkey": null,
+        "gas_used": [],
+        "gas_received": [],
+        "address": "HBCS2aauwAAvxJPWELQVMBFLD7pdtbQaPq5r",
+        "coins": [
+          {
+            "denom": "hbc",
+            "amount": "5000000000000000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "cu_type": "0",
+        "public_key": null,
+        "coins_hold": [],
+        "assets": null,
+        "asset_coins": [],
+        "asset_coins_hold": [],
+        "disable_send_tx": null,
+        "asset_pubkey": null,
+        "gas_used": [],
+        "gas_received": [],
+        "address": "HBCVQ5zZTcVir6F8FbW1oeupbUutw6nAaEG6",
+        "coins": [
+          {
+            "denom": "hbc",
+            "amount": "5000000000000000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "cu_type": "0",
+        "public_key": null,
+        "coins_hold": [],
+        "assets": null,
+        "asset_coins": [],
+        "asset_coins_hold": [],
+        "disable_send_tx": null,
+        "asset_pubkey": null,
+        "gas_used": [],
+        "gas_received": [],
+        "address": "HBCivHUYH6SKYLPvSKMTSadbMCNmYKhTQGNU",
+        "coins": [
+          {
+            "denom": "hbc",
+            "amount": "5000000000000000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "cu_type": "0",
+        "public_key": null,
+        "coins_hold": [],
+        "assets": null,
+        "asset_coins": [],
+        "asset_coins_hold": [],
+        "disable_send_tx": null,
+        "asset_pubkey": null,
+        "gas_used": [],
+        "gas_received": [],
+        "address": "HBCZ1FjW2P8y9r8wMxF1RTbQT6PUXCgzSAbW",
+        "coins": [
+          {
+            "denom": "hbc",
+            "amount": "5000000000000000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "module_name": "",
+        "module_permissions": null
+      }
+    ],
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400000000000",
+        "max_validators": 100,
+        "max_entries": 7,
+        "bond_denom": "hbc",
+        "election_period": "1",
+        "max_key_nodes": 4,
+        "min_key_node_delegation": "210000000000000000000000"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
     "supply": {
       "supply": []
     },
-    "keygen": {},
+    "transfer": {
+      "send_enabled": true
+    },
     "token": {
       "genesis_token_info": [
         {
@@ -388,16 +300,40 @@
             "is_withdrawal_enabled": true,
             "decimals": "8",
             "total_supply": "2100000000000000",
-            "collect_threshold": "1000000",
-            "deposit_threshold": "1000000",
+            "collect_threshold": "2000000",
+            "deposit_threshold": "2000000",
             "open_fee": "28000000000000000000",
             "sys_open_fee": "28000000000000000000",
             "withdrawal_fee": "80000",
             "max_op_cu_number": "6",
-            "sys_transfer_amount": "3000",
-            "op_cu_sys_transfer_amount": "10000",
+            "sys_transfer_num": "3",
+            "op_cu_sys_transfer_num": "30",
             "gas_limit": "1",
             "gas_price": "10000"
+          }
+        },
+        {
+          "symbol": "cbtc",
+          "token_info": {
+            "symbol": "cbtc",
+            "issuer": "0xd956e8416EF3852Dd3a7C76596b472F26dd75B80",
+            "chain": "eth",
+            "type": "2",
+            "is_send_enabled": true,
+            "is_deposit_enabled": true,
+            "is_withdrawal_enabled": true,
+            "decimals": "8",
+            "total_supply": "2100000000000000",
+            "collect_threshold": "2000000",
+            "deposit_threshold": "2000000",
+            "open_fee": "28000000000000000000",
+            "sys_open_fee": "28000000000000000000",
+            "withdrawal_fee": "20000000000000000",
+            "max_op_cu_number": "6",
+            "sys_transfer_num": "3",
+            "op_cu_sys_transfer_num": "30",
+            "gas_limit": "80000",
+            "gas_price": "1000"
           }
         },
         {
@@ -412,14 +348,14 @@
             "is_withdrawal_enabled": true,
             "decimals": "18",
             "total_supply": "0",
-            "collect_threshold": "10000000000000000",
-            "deposit_threshold": "10000000000000000",
+            "collect_threshold": "100000000000000000",
+            "deposit_threshold": "100000000000000000",
             "open_fee": "28000000000000000000",
             "sys_open_fee": "28000000000000000000",
             "withdrawal_fee": "8000000000000000",
             "max_op_cu_number": "6",
-            "sys_transfer_amount": "10000000000000000",
-            "op_cu_sys_transfer_amount": "100000000000000000",
+            "sys_transfer_num": "3",
+            "op_cu_sys_transfer_num": "30",
             "gas_limit": "21000",
             "gas_price": "1000"
           }
@@ -442,8 +378,8 @@
             "sys_open_fee": "0",
             "withdrawal_fee": "0",
             "max_op_cu_number": "0",
-            "sys_transfer_amount": "0",
-            "op_cu_sys_transfer_amount": "0",
+            "sys_transfer_num": "0",
+            "op_cu_sys_transfer_num": "0",
             "gas_limit": "1000000",
             "gas_price": "1"
           }
@@ -452,7 +388,7 @@
           "symbol": "usdt",
           "token_info": {
             "symbol": "usdt",
-            "issuer": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+            "issuer": "0xa5cae37c9c0eb8c5c8a2a7d937bf5b39421be3da",
             "chain": "eth",
             "type": "2",
             "is_send_enabled": true,
@@ -460,16 +396,16 @@
             "is_withdrawal_enabled": true,
             "decimals": "6",
             "total_supply": "30000000000000000",
-            "collect_threshold": "10000000",
-            "deposit_threshold": "10000000",
+            "collect_threshold": "50000000",
+            "deposit_threshold": "50000000",
             "open_fee": "28000000000000000000",
             "sys_open_fee": "28000000000000000000",
             "withdrawal_fee": "20000000000000000",
             "max_op_cu_number": "6",
-            "sys_transfer_amount": "8000000000000000",
-            "op_cu_sys_transfer_amount": "100000000000000000",
+            "sys_transfer_num": "3",
+            "op_cu_sys_transfer_num": "30",
             "gas_limit": "80000",
-            "gas_price": "1000"
+            "gas_price": "5000000000"
           }
         }
       ],
@@ -504,40 +440,285 @@
         ]
       }
     },
-    "crisis": {
-      "constant_fee": {
-        "denom": "hbc",
-        "amount": "1000"
-      }
-    },
-    "gov": {
-      "starting_proposal_id": "1",
-      "deposits": null,
-      "votes": null,
-      "proposals": null,
-      "deposit_params": {
-        "min_init_deposit": [
-          {
-            "denom": "hbc",
-            "amount": "100000000000000000000000"
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "hbtcchain/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "hbtcchain/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node0",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1000000000000000000000000",
+                  "delegator_address": "HBCivHUYH6SKYLPvSKMTSadbMCNmYKhTQGNU",
+                  "validator_address": "hbcvaloper1l9t4e4xnvx25xrr8cyzad8r9n4zx007650ng66",
+                  "pubkey": "hbcvalconspub1zcjduepqntt3kxqjplef58nnqp7kupehg46jtde9yc7r2z0gh88xwalnpu5q53n74d",
+                  "value": {
+                    "denom": "hbc",
+                    "amount": "1000000000000000000000000"
+                  },
+                  "is_key_node": true
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AwRzzznMNl/ghTUJMjz0hsOSRt/qHibmdLyYTDBeCHr8"
+                },
+                "signature": "m2PYm7PEmD6Z4WWdga6HC60LtsxD9QucPbqs/ayAZEdHaIpCj8SggOT2SZHDPoACedG8yIz/FCs4glzs/wYzJw=="
+              }
+            ],
+            "memo": "aaae0ab757491ca4e564cf038de3465bbc0a5ef3@10.4.177.230:26656"
           }
-        ],
-        "min_deposit": [
-          {
-            "denom": "hbc",
-            "amount": "10000000000000000000000000"
+        },
+        {
+          "type": "hbtcchain/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "hbtcchain/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node1",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1000000000000000000000000",
+                  "delegator_address": "HBCZ1FjW2P8y9r8wMxF1RTbQT6PUXCgzSAbW",
+                  "validator_address": "hbcvaloper13jtt477yfn7w7850w6tr0jm3lrdde58mk6qfsx",
+                  "pubkey": "hbcvalconspub1zcjduepqquenqgx69wcqmycjxu9pm8y6n03ygchck3ue5nut5aj3k944ucysmxd247",
+                  "value": {
+                    "denom": "hbc",
+                    "amount": "1000000000000000000000000"
+                  },
+                  "is_key_node": true
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "At2HB32i3/g063JimDuD+EfIb79ylmx9B6exFBupzZH1"
+                },
+                "signature": "5vW/2lYz871+g5flWTPmyMCqAT7K5OWCEao11XhgwR1/GqY46V8O9zJmfQasDRiW43ugVVzr0+IQmQjdp60swg=="
+              }
+            ],
+            "memo": "1476dfb0a7ba64c25c46a42298189b52d433d0f2@10.4.177.140:26656"
           }
-        ],
-        "max_deposit_period": "172800000000000"
-      },
-      "voting_params": {
-        "voting_period": "172800000000000"
-      },
-      "tally_params": {
-        "quorum": "0.334000000000000000",
-        "threshold": "0.500000000000000000",
-        "veto": "0.334000000000000000"
-      }
+        },
+        {
+          "type": "hbtcchain/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "hbtcchain/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node2",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "500000000000000000000000",
+                  "delegator_address": "HBCdNx9SFTcUqWwXerHteqsFQN8cUxnjNJBx",
+                  "validator_address": "hbcvaloper1hjgmgxht4vs5phw4yhnq74vueywz33kgka092p",
+                  "pubkey": "hbcvalconspub1zcjduepqwawnjxdlag634q3hw57kdz93evtny7chxtwqu9jkh4jwf53z56rqz6765u",
+                  "value": {
+                    "denom": "hbc",
+                    "amount": "500000000000000000000000"
+                  },
+                  "is_key_node": true
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AhvwRpcHPO5RgST25meIPL+nzV2rmggTZ5BqXJj/iAxw"
+                },
+                "signature": "ht5VzYHBicSgByBGZ4eDMsmW6GK8Rx1fSY3t68dWw0QfbnS/vi4YSll49tsZy/14IsfiGZBRAZlTHCDekJj8dQ=="
+              }
+            ],
+            "memo": "60e99a991abe638006870abf619cf1d3c9ebdd81@10.4.177.84:26656"
+          }
+        },
+        {
+          "type": "hbtcchain/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "hbtcchain/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node3",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "500000000000000000000000",
+                  "delegator_address": "HBCLUCJkp6KU6WA35GmQ9fya2B3hRZTn4pKd",
+                  "validator_address": "hbcvaloper1qv2hw09dpszav6hrf8tx20epgk39gfcvh0wrc5",
+                  "pubkey": "hbcvalconspub1zcjduepq8g38qvjk7ky8emnqsxk42mq6nh6gnuc6dd6688uffnxvtjtwyhmskvnz3g",
+                  "value": {
+                    "denom": "hbc",
+                    "amount": "500000000000000000000000"
+                  },
+                  "is_key_node": true
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "Akfb09NqtEKTj3TgLwjDwv1XUaSe5IIhjyu8rUx95XfP"
+                },
+                "signature": "Xq5w2zy2QaZfsuZOQX57dmWVKJW8Alr0ipMGO4yKzRU0uA7xyRFenlBE4bhPj+UeZfVbg87y59Ysg7yOkE7TTQ=="
+              }
+            ],
+            "memo": "0887b8ae50f36f66a62280406f8d08772854a28e@10.4.177.154:26656"
+          }
+        },
+        {
+          "type": "hbtcchain/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "hbtcchain/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node4",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1000000000000000000000000",
+                  "delegator_address": "HBCS2aauwAAvxJPWELQVMBFLD7pdtbQaPq5r",
+                  "validator_address": "hbcvaloper1gq8qpt7vkvaqta772g360csnu777kjqhmgu2eq",
+                  "pubkey": "hbcvalconspub1zcjduepqm4qcysq3z4vu2df2y9cr9ttucaqtk7vlgwdtglwtt70mycx4p59qf88t4c",
+                  "value": {
+                    "denom": "hbc",
+                    "amount": "1000000000000000000000000"
+                  },
+                  "is_key_node": true
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A8y+LWhHH1SWEv7FYKZgbVZ1V/H8l8IitaGgQb6NrXyH"
+                },
+                "signature": "mltdtoInQt9eFmd1zRNUyRQZR/YrfQXxxP0p5HNKphgVJ45K1PCJSiDoaAglJY2j0kfzuHH4v3tKsaevhnZaPg=="
+              }
+            ],
+            "memo": "7e13c68f5cc04df31cf4aa6844445a9df326fbad@10.4.177.10:26656"
+          }
+        },
+        {
+          "type": "hbtcchain/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "hbtcchain/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node5",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1000000000000000000000000",
+                  "delegator_address": "HBCVQ5zZTcVir6F8FbW1oeupbUutw6nAaEG6",
+                  "validator_address": "hbcvaloper1v5r6nhjj6guwapnrne3qarfyqd4l6k5z3hjl33",
+                  "pubkey": "hbcvalconspub1zcjduepqurpyvgea2k4ejn30kmfr2nrm9uq3ttmczmshss8qednfhcf38f7sydnfaw",
+                  "value": {
+                    "denom": "hbc",
+                    "amount": "1000000000000000000000000"
+                  },
+                  "is_key_node": true
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A3iFe+rFjZd1E7FESpH/vRSb0PT4LvAbyCi3o63Q0DMP"
+                },
+                "signature": "svRCPESsJnJXox6uob3Pu+8yY6H583d6NjJUrzw2umw/Gyoaq0pvDgxGuTc118lDT81n5knBQw6QmDspG2FQ3Q=="
+              }
+            ],
+            "memo": "15ca9433b3b781a302b5194624b91cc392f8cd37@10.4.177.10:26756"
+          }
+        }
+      ]
     }
   }
 }
