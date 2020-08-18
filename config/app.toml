@@ -25,4 +25,4 @@ halt-time = 0
 
 # chainnode-network config the network type of chainnode; available value: 
 # mainnet, testnet, regtest
-chainnode-network = "mainnet"
+chainnode-network = "testnet"
