@@ -13,16 +13,16 @@ HBTC Chain is powered by bluehelix, the next-generation decentralized custody an
 
 For more information, please refer to the official website: 
 
-https://chain.hbtc.com/
+https://hbtcchain.io/
 
 ## Testnet
 
 HBTC Chain testnet has been released and will be frequently updated. Currently it supports:
 - PoS + PBFT consensus to produce blocks;  
 - Support transferring native token HBC;  
-- Support cross-chain asset: BTC, ETH and ERC20 tokens;  
-- Generating cross-chain mainnet BTC/ETH deposit address;  
-- Deposit, transfer, and withdraw mainnet BTC/ETH from HBTC Chain.
+- Support cross-chain asset: BTC, ETH, ERC20 tokens, TRX, TRC10 tokens, TRC20 tokens;  
+- Generating cross-chain mainnet BTC/ETH/TRX deposit address;  
+- Deposit, transfer, and withdraw mainnet BTC/ETH/TRX from HBTC Chain.
 
 ### Quick Start
 

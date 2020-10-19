@@ -13,17 +13,17 @@ HBTC Chain是运用bluehelix技术打造的下一代去中心化托管清算公�
 
 欲了解更多信息，请打开以下官方网站的链接：
 
-https://chain.hbtc.com/
+https://hbtcchain.io/
 
 ## 测试网
 
 HBTC Chain测试网已经上线并且经常进行更新。当前测试网支持以下功能：  
 - PoS + PBFT共识出块；  
 - 支持链上原生HBC代币的转账；  
-- 支持跨链资产有：BTC, ETH和ERC20代币；  
+- 支持跨链资产有：BTC, ETH, ERC20代币, TRX, TRC10代币, TRC20代币；  
 - 未来将支持大部分的公链；  
-- 生成跨链BTC/ETH主网充币地址；
-- 在HBTC Chain上实现BTC/ETH主网的跨链充币，转账和提币。
+- 生成跨链BTC/ETH/TRX主网充币地址；
+- 在HBTC Chain上实现BTC/ETH/TRX主网的跨链充币，转账和提币。
 
 ### 快速入门
 

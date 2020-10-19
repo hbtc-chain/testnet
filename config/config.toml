@@ -158,7 +158,7 @@ laddr = "tcp://0.0.0.0:26656"
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = "5313db57af9f8081d9fcbdcf008a5272d78b3bac@testnet-node.bluehelix.network:26656"
+seeds = "6b8944d5ceaecc51b0f823eb66bb879cb8913973@54.95.211.99:26656"
 
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = ""
