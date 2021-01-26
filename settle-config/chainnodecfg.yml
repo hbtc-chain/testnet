@@ -1,0 +1,24 @@
+network: mainnet
+
+fullnode:
+  btc:
+    rpcs:
+      - rpc_url: 54.95.211.99:6600
+        rpc_user: bhex
+        rpc_pass: ApnZjLcI9tNCEVBI
+      - rpc_url: 18.237.23.45:6600
+        rpc_user: bhex
+        rpc_pass: ApnZjLcI9tNCEVBI
+    confirmations: 1
+  eth:
+    rpcs:
+      - rpc_url: http://13.231.24.116:6610
+      - rpc_url: http://34.219.99.79:6610
+    confirmations: 2
+  trx:
+    rpcs:
+      - rpc_url: 34.222.186.5:6684 
+      - rpc_url: grpc.trongrid.io:50051
+    confirmations: 20
+
+chains: [ btc, eth, trx ]

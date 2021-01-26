@@ -1,0 +1,30 @@
+##### settle block handler configuration options #####
+[settle]
+# 处理归集需求的区块间隔
+collect_interval = 11
+# 强制归集的区块间隔
+force_collect_interval = 50
+# 强制归集金额是最小归集金额的多少倍
+force_collect_amount_times = 5
+# 最少归集 utxo 数量
+collect_utxo_threshold = 3
+# opcu 资产分布百分比，用于选择归集地址
+opcu_asset_distributioon = [50, 25, 15, 10, ]
+# 处理提现请求的区块间隔
+withdraw_interval = 5
+# 处理内部转账的区块间隔
+systransfer_interval = 5
+# 检查交易状态的区块间隔
+check_tx_interval = 5
+# 检查异常情况的区块间隔
+process_order_interval = 3
+# 同步外链 gas_price 的区块间隔
+sync_gas_interval = 20
+# 处理充值流水的区块间隔
+check_deposit_interval = 2
+# 处理自动充值的区块间隔
+auto_deposit_interval = 2
+# 发送 prekeygen 区块间隔
+pre_key_gen_interval = 10
+# 处理 opcu 资产迁移的区块间隔
+opcu_asset_transfer_interval = 5
