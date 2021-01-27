@@ -1561,7 +1561,20 @@
       "delegations": null,
       "unbonding_delegations": null,
       "redelegations": null,
-      "key_nodes": null,
+      "key_nodes":  [
+        "HBCWnht4camXBUuEL2NMZYj61bas9USQVmYe",
+        "HBCSd2Vb1cTcmxi57AnL5qQvKpS1ezc7EjFt",
+        "HBCfWj5EBL32CnExiA9zW3URfJJ2Y2SLgmfZ",
+        "HBCdfvpbUDzAutMaQkkHmpXumEfDP9sVAMqV",
+        "HBCdQ81s4RVvDos4ZifTNykFWAPYa4peqABZ",
+        "HBCYc14YWHAHRKo3kbW4bZLn5uvkhEfnz9hh",
+        "HBCarc4qSE9uewGfkP1nsUZScV9Ra1NVDr41",
+        "HBCgGe4DY3a3q94Hxb6nP6XxHRbEF2CoZ5r1",
+        "HBCaSR3q7tTLkb3TdXba51wEFyzrXKesijx8",
+        "HBCYnFXLW96J7s8qCqkJzpRPWyZJtrQzWhn1",
+        "HBCdA5e3rHiFN81p6dbmFm667HkW3BN4NYV6",
+        "HBCVVtr4cLk9bFYMWaLXh1weQ95aAWt9rdZU"
+      ],
       "exported": false
     },
     "ibcasset": {},
